@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-4" style="background-color: #0a1f44;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">ConstruForte</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+
+                            Comprar Agora
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section class="bg-light py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold display-5">Material de qualidade,<br>para obras que duram.</h1>
+                    <p class="text-muted fs-5 mt-3" style="max-width: 500px;">
+
+                        A ConstruForte trabalha direto com grandes fabricantes para levar até você cimento, tijolos,
+
+                        tintas e ferramentas com preço justo e entrega rápida na sua obra.
+                    </p>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="ImagemObra.jpg" class="img-fluid rounded-4" alt="Materiais de construção ConstruForte">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Faça seu pedido: </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Kit básico para reforma</li>
+                        <li>1 saco de cimento de 50kg</li>
+                        <li>5 sacos de cimento de 50kg</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Ir para o carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Depoimentos -->
+    <section class="py-5 bg-white">
+        <div class="container text-center" style="max-width: 700px;">
+            <p class="fw-bold small mb-1" style="color: #b5762f; letter-spacing: 1px;">QUEM JÁ COMPROU</p>
+            <h2 class="fw-bold mb-5">O que dizem nossos clientes</h2>
+
+            <div id="depoimentosCarousel" class="carousel slide position-relative">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="text-warning fs-5 mb-3">★★★★★</div>
+                        <p class="fst-italic fs-5 mb-4">
+
+                            "Melhor loja de materiais que já comprei. Vou recomendar na Fiap."
+                        </p>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="rounded-circle mb-2"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #d8b16a, #a97c3f);">
+                            </div>
+                            <strong>Cyntia Sayuri</strong>
+                            <small class="text-muted">Cliente desde 2023</small>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="text-warning fs-5 mb-3">★★★★★</div>
+                        <p class="fst-italic fs-5 mb-4">
+
+                            "Qualidade impecável e entrega sempre no prazo. Minha esposa Bruna ama!"
+                        </p>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="rounded-circle mb-2"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #d8b16a, #a97c3f);">
+                            </div>
+                            <strong>Neymar Jr</strong>
+                            <small class="text-muted">Cliente desde 2022</small>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="text-warning fs-5 mb-3">★★★★★</div>
+                        <p class="fst-italic fs-5 mb-4">
+
+                            "Virou minha loja de confiança. Estou reformando a academia com ela."
+                        </p>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="rounded-circle mb-2"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #d8b16a, #a97c3f);">
+                            </div>
+                            <strong>Renato Cariani</strong>
+                            <small class="text-muted">Cliente desde 2024</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel"
+                    data-bs-slide="prev" style="width: auto; left: -40px;">
+                    <span class="btn btn-light rounded-circle border" style="width: 36px; height: 36px;">‹</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel"
+                    data-bs-slide="next" style="width: auto; right: -40px;">
+                    <span class="btn btn-light rounded-circle border" style="width: 36px; height: 36px;">›</span>
+                </button>
+
+                <div class="carousel-indicators position-relative mt-4" style="bottom: 0;">
+                    <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="0" class="active"
+                        style="width:8px; height:8px; border-radius:50%; background-color:#b5762f;"></button>
+                    <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="1"
+                        style="width:8px; height:8px; border-radius:50%; background-color:#c9c9c9;"></button>
+                    <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="2"
+                        style="width:8px; height:8px; border-radius:50%; background-color:#c9c9c9;"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="bg-light py-5">
+        <div class="container" style="max-width: 700px;">
+            <h2 class="fw-bold text-center mb-4">Perguntas frequentes</h2>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+
+                            Como devo armazenar o cimento após aberto?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+
+                            O cimento deve ser guardado em local seco, longe de umidade e do contato direto com o chão,
+                            em pilhas de no máximo 10 sacos, e usado em até 90 dias.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+
+                            Vocês entregam para todo o Brasil?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+
+                            Sim! Enviamos para todas as regiões, com prazo médio de 3 a 7 dias úteis dependendo da
+                            localidade.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+
+                            Posso trocar ou devolver um produto?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+
+                            Sim, a troca ou devolução pode ser feita em até 7 dias após o recebimento, sem multas ou
+                            taxas, diretamente no seu painel de cliente.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
